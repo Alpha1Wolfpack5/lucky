@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Food Delivery Service</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <img src="Oklahoma_Sooners_logo.svg.png" alt="University logo">
+    </header>
+    <div id="login-container" class="show">
+      <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" title="Please enter a valid username">
+        <label for="password">Password:</label>
+        <input type="number" id="password" name="password" min="100000000" max="999999999">
+        <button type="submit">Login</button>
+      </form>
+    </div>
+    <div id="dashboard" class="hide">
+      <h1>Welcome to the food delivery service!</h1>
+      <p>Please select an option:</p>
+      <button id="order-btn">Order Food</button>
+      <button id="deliver-btn">Deliver Food</button>
+      <button id="logout-btn">Logout</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
+

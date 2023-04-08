@@ -1,0 +1,107 @@
+/* Set the background color of the login page to dark red */
+body {
+	background-color: #8B0000;
+  }
+
+/* Basic styles for the header and form */
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	/* background-color: #fff;
+	border-bottom: 1px solid #ddd; */
+  }
+  header img {
+	max-height: 100%;
+	max-width: 100%;
+  }
+  form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+  }
+  
+  label, input, button {
+	margin: 10px;
+  }
+  
+  /* Hide the dashboard until the user is logged in */
+  /* Login page styles */
+#login-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50vh;
+  }
+  
+  #login-form {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  #login-form label {
+	margin-bottom: 10px;
+	font-weight: bold;
+	color: #333;
+  }
+  
+  #login-form input {
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  #login-form button {
+	margin-top: 20px;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: #900;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+  }
+/* Dashboard styles */
+  #dashboard {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+  }
+  
+  #dashboard h1 {
+	margin-bottom: 20px;
+	font-size: 36px;
+	font-weight: bold;
+	color: #333;
+  }
+  
+  #dashboard p {
+	margin-bottom: 20px;
+	font-size: 24px;
+	color: #666;
+  }
+  
+  #dashboard button {
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: #900;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+	margin-bottom: 10px;
+  }
+  
+  #logout-btn {
+	background-color: #f00;
+  }
