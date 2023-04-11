@@ -3,9 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <title>Food Delivery Service</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+  
     <header>
       <img src="Oklahoma_Sooners_logo.svg.png" alt="University logo">
     </header>
@@ -21,11 +26,15 @@
     <div id="dashboard" class="hide">
       <h1>Welcome to the food delivery service!</h1>
       <p>Please select an option:</p>
-      <button id="order-btn">Order Food</button>
-      <button id="deliver-btn">Deliver Food</button>
+      <button onclick="redirectToUrl()" id="order-btn">Order Food</button>
+      <button onclick="api()" id="deliver-btn">Deliver Food</button> 
       <button id="logout-btn">Logout</button>
+    </div>
+    <div class="mapD">
+       <div id="map"></div>
     </div>
     <script src="app.js"></script>
   </body>
+
 </html>
 
