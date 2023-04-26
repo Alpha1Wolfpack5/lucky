@@ -19,6 +19,9 @@ loginForm.addEventListener('submit', (event) => {
   if (isLoggedIn) {
     loginForm.reset();
     loginForm.style.display = 'none';
+    document.querySelector('#login-container').style.display = 'none';
+    document.body.style.backgroundImage = "url('dashboardOUberEats.jpg')";
+
     dashboard.style.display = 'flex';
   }
 });
@@ -32,8 +35,10 @@ logoutBtn.addEventListener('click', () => {
   const isLoggedIn = false;
   
   if (!isLoggedIn) {
+    document.querySelector('#login-container').style.display = 'flex';
     dashboard.style.display = 'none';
     loginForm.style.display = 'flex';
+    document.body.style.backgroundImage = "url('loginpageOUberEats.jpg')";
   }
 });
 
